@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Fasthand&family=Montserrat&family=Pacifico&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Montserrat&family=Playfair+Display:ital,wght@0,600;1,600&display=swap');
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+header{
+    height: 21vh;
+    width: 100vw;
+    background-image: url(image/img_bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+}
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;  /*pour aligner les elements*/
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center; /* pour aligner le logo et la navbar*/
+    border-bottom: 2px solid #6f6f6f;
+
+}
+
+.navbar a {
+    color: black;
+}
+.navbar .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Fasthand', sans-serif;
+}
+.navbar .nav-liens ul{
+    display: flex;
+    margin-left: 100PX;
+
+
+}
+.navbar .nav-liens ul li{
+    margin: 0 20px; /* pour spacer les menus*/
+    justify-content: center;
+
+}
+.navbar .nav-liens ul li.actif a{
+   color: orange;
+   font-weight: 600px; 
+}
+.srch{
+  border: transparent;
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  border-radius: 10px;
+  margin-left: 150px;
+
+}
+.main{
+    margin-top: 0.5px;
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    padding: 0.1px;  
+    justify-content: space-around;
+}
+.new h1{
+    margin-left: 100px;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+.main .content .card .left,.right{
+    display: flex;
+    background-color: #fff;
+    height: 620px;
+    width: 699px;
+    padding: 0;
+    border: 1px solid #ccc;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.main .content .card .left{
+    display: flex;
+    background-size: cover;
+    background-image: url(image/img1.png);
+    background-position: center;
+    height: 400px;
+    width: 645px;
+}
+.main .content .card .left h1,p,h4{
+    text-align: center;
+}
+.main .content .card .left h1{
+    color: white;
+}
+.main .content .card .left h4{
+    margin-top: 40px;
+}
+.main .content .card .left a{
+    margin-top: 30px;
+    border-bottom: 3px solid #ffa400;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: !important;
+
+}
+.main .content .card .right .sub_right h1{
+    color: skyblue;
+}
+.main .content .card .right .sub_right h4{
+    margin-top: 40px;
+}
+.main .content .card .right{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-size: absolute;
+    height: 400px;
+}
+.main .content .card .right .sub_right a{
+    margin-top: 30px;
+    border-bottom: 3px solid #ffa400;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    font-size: !important;
+
+}
+
+.main .content .card .right .sub_right{
+    width: 300px;
+    height: 300px;
+    background-color: #2196F3;
+    color: #080808;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px ;
+    margin-top: 1px;
+    flex-wrap: wrap;
+    padding-left: 45px;
+
+}
+#men {
+    background-image: url(image/men.png);
+    background-position: center;
+    background-size: absolute;
+    height: 197px;
+    width: 300px;
+
+
+}
+#kids {
+    background-image: url(image/kids.png);
+    background-position: center;
+    background-size: absolute;
+    height: 197px;
+    width: 300px;
+}
+#accessoires {
+    background-image: url(image/accessoire.png);
+    background-position: center;
+    background-size: absolute;
+    height: 197px;
+    width: 300px;
+}
+#cosmetics {
+    background-image: url(image/cosmetic.jpeg);
+    background-position: center;
+    background-size: absolute;
+    height: 197px;
+    width: 300px;
+}
+
+
+.main .content .card{
+    display: flex;
+}
+
+/*.left{
+    background-image: url(image/img1.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}*/
+.galerie{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+
+
+.magalerie{
+    margin: 15px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 300px;
+    flex-wrap: wrap;
+
+}
+.magalerie:hover{
+    border: 2px solid #ffa400;
+}
+.magalerie img{
+    width: 100%;
+    height: auto;
+}
+.description{
+    padding: 10px;
+    text-align: center;
+}
+.star{
+    padding-left: 110px;
+    color: #ffa400;
+}
+.prix{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Fasthand',serif; 
+    font-weight: bold;  
+}
+.banner{
+  padding: 12em 2em 8em 2em;
+  background-image: url(image/img2.png) ;
+  background-size: cover;
+  background-position-x: 100px;
+  margin-left: 120px;
+  margin-top: 70px;
+  width: 965px;
+  height: 50px;
+  text-align: center;
+  border-top: .2rem solid #ffa400;
+}
+.banner-wrapper {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.b-title {
+      margin-top: -5rem;
+      margin-bottom: 0;
+    }
+.banner a{
+    margin-top: 30px;
+    border-bottom: 3px solid orangered;
+    color: black;
+    font-weight: bold;
+}
+.banner p{
+    margin-top: 20px;
+    font-family: 'Playfair Display',serif;
+    font-size: 40px;
+}
+.desc{
+    padding-top: 40px;
+
+}
+.descr{
+    display: flex;
+    margin-left: 10px;
+}
+.descr p{
+    margin-left: 200px;
+    border-bottom: 2px solid darkred;
+
+}
+
+
+.tendance{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+.mtendances{
+    margin: 15px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.mtendances:hover{
+    border: 2px solid darkred;
+}
+.mtendances img{
+    width: 40%;
+    height: auto;
+}
+.tendances .tendance .mtendances p{
+    padding-left: 20px;
+}
+.tendances .tendance .mtendances i{
+    padding-bottom: 10px;
+    color: #ffa400;
+}
+.summer{
+    display: flex;
+    margin-left: 50px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.summer .now{
+    background-color: lightgray;
+    width: 600px;
+}
+.summer .now h1{
+    color: red;
+    font-family: 'Fasthand', sans-serif;
+    font-size: 50px;
+    margin-left: 150px;
+}
+.summer .now P{
+    color: black;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 15px;
+}
+.summer .now a{
+    color: black;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-left: 250px;
+    border-bottom: 2px solid darkred;
+}
+.cart .carte img{
+    width: 300px;
+    height:300px;
+}
+.cart .carte{
+    display: flex;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.payment{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1300px;
+    margin: 70px auto 0;
+}
+.pay{
+    margin: 15px;
+    border: 1px solid whitesmoke;
+    float: left;
+    width: 300px;
+    flex-wrap: wrap;
+    display: flex;
+}
+.paiement .payment .pay p{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.paiement .payment .pay i{
+    padding-top: 22px;
+    color: #ffa400;
+}
+
+
+footer{
+    margin-top: 2px;
+    border-top: 2px solid #6f6f6f;
+    padding: 30px 100px;
+
+}
+footer h2{
+    font-family: 'Fasthand', sans-serif;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+footer .services{
+    margin-top: 10px;
+    display: flex;
+}
+footer .services .service{
+      
+    margin-right: 60px;
+}
+footer .services .service i{
+    margin-left: 10px;
+}
+footer .services .service h3{
+    padding-bottom: 8px;
+    text-decoration: underline;
+}
+footer .services .service .foot ul{
+    display: flex;
+    border-bottom: 2px solid #6f6f6f;
+
+
+}
+input[type=text] {
+  width: 100%;
+  height: 40px;
+  padding: 12px;
+  margin: 8px 0;
+  display: flex;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+input[type=submit]{
+    width: 80px;
+    height: 40px;
+    padding: 12px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: red;
+}
+#copyright{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 15px;
+}
+/*.services .service .foot ul{
+    display: flex;
+}*/
+}
+/*.container {
+  padding: 20px;
+  background-color: red;
+}*/
+
+@media screen and (max-widht: 600px){
+    
+    .nav-liens{
+        position: absolute;
+    }
+
+}
+
